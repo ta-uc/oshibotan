@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja" >
+<head>
+  <meta charset="UTF-8">
+  <title>押しボタン</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <audio id="sound" preload="auto" src="./sound.mp3"></audio>
+  <div id="box">
+    <div id="display_wait">
+      <p id = wait_text class="text">おまちください</p>
+    </div>
+    <buton id="button" disabled="false"></buton>
+    <div id="display_push">
+      <p id = push_text class="text">おしてください</p>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyA1NKtfijgNACXbdoRU8MwqTqepLW27Qhc",
+      authDomain: "oshibotan-2383d.firebaseapp.com",
+      databaseURL: "https://oshibotan-2383d.firebaseio.com",
+      projectId: "oshibotan-2383d",
+      storageBucket: "oshibotan-2383d.appspot.com",
+      messagingSenderId: "760342524882",
+      appId: "1:760342524882:web:feb6b92a17da17bef4ce0b"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="./script.js"></script>
+</body>
+</html>
